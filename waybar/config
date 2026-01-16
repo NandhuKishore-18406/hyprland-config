@@ -1,0 +1,61 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 26,
+
+    "modules-left": [
+        "custom/sys",
+        "cpu",
+        "memory",
+	"hyprland/workspaces"
+    ],
+
+    "modules-center": [
+  
+    ],
+
+    "modules-right": [
+        "network",
+        "custom/battery",
+        "clock"
+    ],
+
+    "custom/sys": {
+        "format": "[SYS]",
+        "tooltip": false
+    },
+
+    "cpu": {
+        "format": "CPU {usage}%",
+        "tooltip": false
+    },
+
+    "memory": {
+        "format": "MEM {used:0.1f}G",
+        "tooltip": false
+    },
+
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "disable-scroll": true
+    },
+
+    "network": {
+        "format-wifi": "NET UP",
+        "format-ethernet": "NET LAN",
+        "format-disconnected": "NET DOWN",
+        "tooltip": false
+    },
+
+    "custom/battery": {
+        "exec": "~/.config/waybar/scripts/battery_ascii.sh",
+        "interval": 30,
+        "return-type": "json",
+        "tooltip": false
+    },
+
+    "clock": {
+        "format": "{:%H:%M}",
+        "tooltip": false
+    }
+}
