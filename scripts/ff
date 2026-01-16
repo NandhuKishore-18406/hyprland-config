@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# ===== CONFIG =====
+TOP_BOTTOM=2
+LEFT_RIGHT=6
+
+ACCENT="$(printf '\033[38;2;245;147;209m')"  # #f593d1
+RESET="$(printf '\033[0m')"
+
+PAD="$(printf '%*s' "$LEFT_RIGHT")"
+# ==================
+
+# top padding
+for _ in $(seq 1 "$TOP_BOTTOM"); do
+  printf "%s%s%s\n" "$ACCENT" "$PAD" "$RESET"
+done
+
+# fastfetch with left/right padding + accent
+fastfetch | sed "s/^/${ACCENT}${PAD}${RESET}/"
+
+# bottom padding
+for _ in $(seq 1 "$TOP_BOTTOM"); do
+  printf "%s%s%s\n" "$ACCENT" "$PAD" "$RESET"
+done
