@@ -15,7 +15,7 @@ This repository contains my personal Hyprland environment including window manag
 ### Application Launcher
 ![Rofi](screenshots/screenshot_2026-01-16_19-57-15.png)
 
-### Terinal confg
+### Terinal config
 ![Terminal](screenshots/terminal)
 
 
