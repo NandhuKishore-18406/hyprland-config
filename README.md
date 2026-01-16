@@ -9,8 +9,6 @@ This repository contains my personal Hyprland environment including window manag
 
 ## Screenshots
 
-## Screenshots
-
 ### Desktop
 ![Desktop](screenshots/screenshot_2026-01-16_19-57-12.png)
 
